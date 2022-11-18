@@ -1,0 +1,17 @@
+Q-3 What is the difference between OOP and POP?
+Ans:-
+
+--> OOP:- Object oriented programming language is divdied into objects.
+	- Buttom-up approach.
+	- uses access specifier.
+	- existing code can be reused.
+	- concepts of virtual function.
+	- ex. c++,java.
+	
+
+--> POP:- Procedure oriented programming is divided into functions.
+	- Top-down approach.
+	- it doesn't use access specifier.
+	- existing code can not be reused.
+	- no concepts of virtual function.
+	- ex. C,pascal
