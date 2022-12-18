@@ -1,0 +1,96 @@
+01):-   What do you understand by DataBase?
+Ans):-  A database is information that is set up for easy access, management and updating.
+	Computer databases typically store aggregations of data records or files that contain information, 
+	such as sales transactions, customer data, financials and product information.
+	
+	Database is the collection of data to access,manage,organise electricaly from in the file systems 
+	known as the database.
+
+02):-   What is Normalization?
+Ans):-  Normalization is the process of elemeneting the redundancy,duplication,inconsitancy 
+	of the table form elemeting columns.
+	
+	Normalization is the process to eliminate data redundancy and enhance data integrity in the table.
+	Normalization also helps to organize the data in the database. 
+	It is a multi-step process that sets the data into tabular form and removes the duplicated data from the relational tables.
+
+03):-   What is Difference between DBMS and RDBMS?
+Ans):-  < DBMS >
+	Database Management System (DBMS) is software used to identify, manage, and create a database that 
+	provides administered access to the data.
+	i>  Data stored is in the file format
+	ii> Individual access of data elements
+	iii>DBMS supports a single user
+	iv> Data redundancy is common
+
+	< RDBMS >
+	Relational Database Management System (RDBMS) is a more advanced version of a DBMS system that allows access to data 
+	in a more efficient way. It is used to store or manage only the data that are in the form of tables
+	i>   Data stored is in table format.
+	ii>  Multiple data elements are accessible together.
+	iii> RDBMS support multiple users.
+	iv>  Here, redundancy of data is reduced with the help of key and indexes in RDBMS.
+
+04):-   What is MF Cod Rule of RDBMS Systems?
+Ans):-  A relational database management system must manage its stored data using only its relational capabilities
+        Codd's twelve rules are a set of thirteen rules (numbered zero to twelve) proposed by Edgar F. Codd, 
+	a pioneer of the relational model for databases, designed to define what is required from a database management 
+	system in order for it to be considered relational, i.e., a relational database management system (RDBMS).
+
+
+
+05):-   What do you understand By Data Redundancy?
+Ans):-  Redundancy of Data: Redundancy of data is when the same data has multiple copies across the database or has data which
+	is outdated despite being updated. This issue can be frequently seen in the file system.
+
+06):-   What is DDL Interpreter?
+Ans):-  DDL is short name of Data Definition Language, which deals with database schemas and descriptions, 
+	of how the data should reside in the database.
+
+07):-   What is DML Compiler in SQL?
+Ans):-  DML is short name of Data Manipulation Language which deals with data manipulation and includes most common SQL statements 
+	such SELECT, INSERT, UPDATE, DELETE, etc., and it is used to store, modify, retrieve, delete and update data in a database.
+	SELECT - retrieve data from a database
+	INSERT - insert data into a table
+	UPDATE - updates existing data within a table
+	DELETE - Delete all records from a database table
+
+08):-   SQL - stand for the structure query language  
+    	- can store,retrive,and manipulate the data in to the database
+    	- can execute queries against a database
+	Primary key - unique not null 
+	Default     - Set Default value
+	UNIQUE      - Not Duplicate
+	Check       - validate the column
+	NOT NULL    - coulumn cant be null
+	FORIEGN     - refert the primary key of the other table
+
+09):-   Savepoint is a command in SQL that is used with the rollback command.
+	A save point is a logical rollback point within a transaction. When you set a save point, 
+	whenever an error occurs past a save point, you can undo the events you have done up to the save point using the rollback.
+
+10):-   What is trigger and how to create a Trigger in SQL?
+Ans):-  A trigger is a special type of stored procedure that automatically runs when an event occurs in the database server.
+	Trigger is the same as the procedure
+	A trigger is a special type of stored procedure that automatically runs when an event occurs in the database server. 
+	Type Trigger
+	1>After Insert
+	2>After Update
+	3>After Delete
+	4>Before INsert
+	5>Before Update
+	6>Before Delete
+
+
+	CREATE TABLE db_country(
+	id int PRIMARY KEY AUTO_INCREMENT,
+	username varchar(50),
+	name varchar(50)
+	);
+
+	CREATE TABLE db_country_log(
+	id int PRIMARY KEY AUTO_INCREMENT,
+	name varchar(50),
+	username varchar(50),
+	insertedtime time
+	);

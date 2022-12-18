@@ -1,0 +1,156 @@
+MODULE 5 (TASK)
+
+* CREATE DATABASE Assignment
+
+Question 01:-Create Table Name : Student and Exam
+Ans:-
+* CREATE TABLE student(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    RollNo int NOT null,
+    Name varchar(50),
+    Branch varchar(50)
+    );
+
+* INSERT INTO `student` (`id`, `RollNo`, `Name`, `Branch`) VALUES (NULL, '1', 'Jay', 'Computer Science'), 
+			(NULL, '2', 'Suhani', 'Electronic And Com');
+* INSERT INTO `student` (`id`, `RollNo`, `Name`, `Branch`) VALUES (NULL, '3', 'kriti', 'Electronic And Com');
+
+*
+table 2:)
+* CREATE TABLE Exam(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    RollNo int NOT null,
+    S_code varchar(50),
+    Marks int NOT null,
+    P_code varchar(50)
+    );
+
+* INSERT INTO `exam` (`id`, `RollNo`, `S_code`, `Marks`, `P_code`) VALUES (NULL, '1', 'CS11', '50', 'CS'), 
+			(NULL, '1', 'CS12', '60', 'CS'), (NULL, '2', 'EC101', '66', 'EC'), (NULL, '2', 'EC102', '70', 'EC'), 
+			(NULL, '3', 'EC101', '45', 'EC'), (NULL, '3', 'EC102', '50', 'EC');
+
+Question 2 :- create table users
+
+Ans:-
+* CREATE TABLE users(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    FirstName varchar(50),
+    LastName varchar(50),
+    Address varchar(50),
+    city varchar(50),
+    Age int NOT null
+    );
+* INSERT INTO `users` (`id`, `FirstName`, `LastName`, `Address`, `city`, `Age`) VALUES 
+			(NULL, 'Mickey', 'Mouse', '123, Fantasy Way', 'Anaheim', '73'), 
+			(NULL, 'Bat', 'Man', '321, Cavern Ave', 'Gotham', '54'), 
+			(NULL, 'Wonder', 'Women', '987, Truth Way', 'Paradise', '39'), 
+			(NULL, 'Donald', 'Duck', '555, Quack Street', 'mallord', '65'), 
+			(NULL, 'Bugs', 'Bunny', '567, Carrot street', 'Rascal', '58'), 
+			(NULL, 'Wiley', 'Coyote', '999, Acme Way', 'Canyon', '61'), 
+			(NULL, 'Cat', 'Waomen', '234 Purrfect Street', 'Hairball', '32'), 
+			(NULL, 'Tweety', 'Bird', '543', 'Itotltaw', '28');
+
+Question 3:-Create table given below: Employee and Incentive
+Ans:-
+* CREATE TABLE Employee(
+    Employee_id int PRIMARY KEY AUTO_INCREMENT,
+    First_name varchar(50),
+    Last_name varchar(50),
+    salary int NOT null,
+    Joining_date timestamp,
+    Department varchar(50)
+    );
+
+* INSERT INTO `employee` (`Employee_id`, `First_name`, `Last_name`, `salary`, `Joining_date`, `Department`) VALUES 
+			(NULL, 'John', 'Abraham', '1000000', '2022-12-13 10:14:01', 'Banking');
+
+
+* CREATE TABLE Incentive(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    employee_ref_id int Not Null,
+    Incentive_date timestamp,
+    Incentive_amount int Not Null
+    );
+
+* INSERT INTO `incentive` (`id`, `employee_ref_id`, `Incentive_date`, `Incentive_amount`) VALUES 
+			(NULL, '1', '2022-12-13 10:44:00', '5000'), (NULL, '2', '2022-12-13 10:44:00', '3000'), 
+			(NULL, '3', '2022-12-13 10:44:00', '4000'), (NULL, '1', '2022-12-13 10:44:00', '4500'), 
+			(NULL, '2', '2022-12-13 10:44:00', '3500');
+
+Q3-A:- SELECT * FROM `employee` WHERE First_name = 'Tom';
+Q3-B:-SELECT First_name,Joining_date,salary FROM employee
+Q3-c-1:-SELECT * FROM employee ORDER BY First_name ASC
+Q3-c-2:-SELECT * FROM employee ORDER BY Salary DESC
+Q3-D:-SELECT * FROM employee WHERE First_name LIKE 'J%'
+Q3-E:-SELECT Department,MAX(salary) FROM employee GROUP BY Department
+Q3-F:-SELECT First_name, incentive_amount FROM employee A INNER JOIN incentive B ON A.Employee_id=B.employee_ref_id AND incentive_amount>3000
+Q3-G:- CREATE TABLE Employee_Log(
+    	Employee_id int PRIMARY KEY AUTO_INCREMENT,
+    	First_name varchar(50),
+    	Last_name varchar(50),
+    	salary int NOT null,
+    	Joining_date timestamp,
+    	Department varchar(50)
+    	);
+* Trigger (AFTER INSERT)
+  DELIMITER//
+  CREATE TRIGGER after_insert
+  AFTER INSERT on employee
+  FOR EACH ROW
+  BEGIN
+	INSERT INTO employee_log(First_name,Last_name,salary,Joining_date,Department)VALUES
+	(new.First_name,new.Last_name,new.salary,new.Joining_date,new.Department);
+  END//
+
+*	INSERT INTO `employee` (`Employee_id`, `First_name`, `Last_name`, `salary`, `Joining_date`, `Department`) VALUES 
+	(NULL, 'Akshit', 'Patel', '1000000', '2022-12-19 00:54:05', 'Banking');
+
+
+Quest 04:-Create table given below: Salesperson and Customer
+Ans:-
+
+* CREATE TABLE Salesperson(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    SNo int NOT Null,
+    SName varchar(50),
+    City varchar(50),
+    Comm int NOT Null
+    );
+
+
+* INSERT INTO `salesperson` (`id`, `SNo`, `SName`, `City`, `Comm`) VALUES (NULL, '1001', 'Peel', 'London', '.12'), 
+			(NULL, '1002', 'Serres', 'San Jose', '.13'), (NULL, '1004', 'Motika', 'London', '.11'), 
+			(NULL, '1007', 'Rafkin', 'Barcelona', '.15'), (NULL, '1003', 'Axelrod', 'New York', '.1');
+
+
+* CREATE TABLE customer(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    CNM int NOT null,
+    CNAME varchar(50),
+    CITY varchar(50),
+    Rating int NOT null,
+    SNo int NOT NULL
+    );
+
+
+* INSERT INTO `customer` (`id`, `CNM`, `CNAME`, `CITY`, `Rating`, `SNo`) VALUES (NULL, '201', 'Hoffman', 'London', '100', '1001'), 
+	(NULL, '202', 'Glovanne', 'Roe', '200', '1003'), (NULL, '203', 'Liu', 'San Jose', '300', '1002'), 
+	(NULL, '204', 'Grass', 'Barcelona', '100', '1002'), (NULL, '206', 'Clemens', 'London', '300', '1007'), 
+	(NULL, '207', 'Pereira', 'Roe', '100', '1004');
+
+* CREATE TABLE Order_table(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    Ono int NOT Null,
+    Amt int NOT null,
+    ODate timestamp,
+    CNM int NOT null,
+    SNo int NOT null
+    );
+
+* INSERT INTO `order_table` (`id`, `Ono`, `Amt`, `ODate`, `CNM`, `SNo`) VALUES (NULL, '307', '75.75', '2022-12-19 02:13:24', '204', '1002'), (NULL, '308', '4723.00', '2022-12-19 02:13:24', '206', '1001'), (NULL, '310', '1309.95', '2022-12-19 02:15:11', '204', '1002'), (NULL, '311', '9591.88', '2022-12-19 02:15:11', '206', '1001');
+
+Q4-A:-SELECT * FROM order_table WHERE Amt>1000;
+Q4-B:-SELECT SName,City FROM salesperson WHERE Comm > 0.12 AND City = 'London';
+Q4-C:-SELECT SName,City FROM salesperson WHERE City IN ('Barcelona’,’London')
+Q4-D:-SELECT SName, Comm FROM salesperson WHERE Comm>0.10 AND Comm <0.12
+Q4-E:-SELECT CNAME FROM customer WHERE Rating <=100 OR CITY='Roe'
