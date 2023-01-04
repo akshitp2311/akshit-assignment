@@ -1,0 +1,177 @@
+Quest-01:-Are the HTML tags and elements the same thing?
+Ans-01:-  HTML Tags: Tags are the starting and ending parts of an HTML element. They begin with < symbol and end with > symbol. 
+	  Whatever written inside < and > are called tags.
+	Example:-HTML Tags { <p> </p> }
+	  HTML elements: Elements enclose the contents in between the tags. They consist of some kind of structure or expression. 
+	  It generally consists of a start tag, content and an end tag.
+	Example:-HTML Elements { <b>This is the content.</b> }
+
+Quest-02:-What are tags and attributes in HTML?
+Ans-02:-HTML Tags:-
+	HTML tags are like keywords which defines that how web browser will format and display the content. 
+	With the help of tags, a web browser can distinguish between an HTML content and a simple content. 
+	HTML tags contain three main parts: opening tag, content and closing tag. But some HTML tags are unclosed tags.  
+	
+	HTML Attributes:-
+	All HTML elements can have attributes. Attributes provide additional information about elements
+	Attributes are always specified in the start tag. Attributes usually come in name/value pairs like: name="value".
+	Example:-
+	All HTML elements can have attributes
+	The href attribute of <a> specifies the URL of the page the link goes to
+	The src attribute of <img> specifies the path to the image to be displayed
+	The width and height attributes of <img> provide size information for images
+	The alt attribute of <img> provides an alternate text for an image
+	The style attribute is used to add styles to an element, such as color, font, size, and more
+	The lang attribute of the <html> tag declares the language of the Web page
+	The title attribute defines some extra information about an element
+
+Quest-03:-What are void elements in HTML?
+Ans-03:-  A void element is an element whose content model never allows it to have contents under any circumstances. 
+	  Void elements can have attributes.For example:-area, base, br, col, command, embed, hr, img, input, keygen, 
+	  link, meta, param, source, track, wbr.
+
+Quest-04:-What are HTML Entities?
+Ans-04:-  HTML Entities are some character are reserved int HTML. If you user the less than (<) or greater than (>) sign in your text, 
+	  the browsers might mix them with tags
+	  A greater than and less than  entity looks like this {&lt for less than and &gt for greater than}
+
+Quest-05:-What are different types of lists in HTML?
+Ans-05:-  HTML list have three types.
+	  1) Order list:-
+		An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+		Example:- order list -> <ol>..<li>
+			<!-- type -> defult (1), A, a, I, i -->
+    			<ol type="1" start="11">
+      			  <li>Mango</li>
+      			  <li>Watermalon</li>
+      			  <li>Orange</li>
+    			</ol>
+	  2) Unorder List
+		An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+		Example:-unorder list -> <ul>..<li>
+			<!-- type -> fill rounded(default), circle,  square -->
+    			<ul type="square">
+     			 <li>Mango</li>
+     			 <li>Orange</li>
+   			 <li>Watermalon</li>
+			</ul
+	  3) Defination List / Description list
+		The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:
+		Example:-defination list -> <dl>..<dt>..<dd>
+			 <!-- dl -> defination list -->
+    			 <!-- dt -> define term -->
+			 <!-- dd -> define description -->
+				<dl>
+				 <dt>fruits</dt>
+				 <dd>Orange, Apple, Mango</dd>
+				 <dt>Vegetables</dt>
+				 <dd>Patato, Tamato, peaes</dd>
+    				</dl>
+Quest-06:-What is the ‘class’ attribute in HTML?
+Ans-06:-  The class attribute specifies one or more classnames for an element. The class attribute is mostly used to point to a 
+	  class in a style sheet. However, it can also be used by a JavaScript (via the HTML DOM) to make changes to 
+	  HTML elements with a specified class.
+
+Quest-07:-What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements?
+Ans-07:-  The only difference between them is that “id” is unique in a page and can only apply to at most one element, 
+	  while “class” selector can apply to multiple elements.
+	  While an ID is specific to a single element, classes can be assigned to multiple elements on a page or throughout the website. 
+
+Quest-08:-What are the various formatting tags in HTML?
+Ans-08:-  HTML contains several elements for defining text with a special meaning.formatting element were designed to display special
+	  there are 14 formatting element appears in HTML
+	Example:-Bold<b>, Italic text<i>, Underline text<u>, Important text<strong>, Marked text<mark>, Deleted text<del>,Inserted text<ins>,
+		Subscript Text<sub>, Superscript<sup>, Smaller text<small>, etc more.
+
+Quest-09:-How is Cell Padding different from Cell Spacing?
+Ans-09:-  Both Cellspacing and Cellpadding are the attributes that one can use in table formatting. They basically set those whitespaces 
+	  in any given table cell. Thus, they form a significant part of a web document.
+	Cellpadding:-   It only associates with individual (single) cells.
+			Using Cellpadding, one can easily control the white space present between a cell border and the content present in it.
+			It is a very effective method.
+			It has a default value of 1.
+			One can create Cellpadding using the tag of HTML <table>.
+			Here, we set the type of attribute to cellpadding.
+	Cellspacing:-   It associates with multiple cells- not just a single one.
+			Using Cellspacing, you can set the spaces between various cells.
+			It is comparatively less effective than the process of cell padding.
+			In this case, the spacing value by default becomes 2.
+			One can easily create Cellspacing by using the tag of HTML <table>.
+			Here, we set the type of attribute to cellspacing.
+
+Quest-10:-How can we club two or more rows or columns into a single row or column in an HTML table?
+Ans-10:-  We use the colspan and rowspan attribute, to merge cells in HTML. The rowspan attribute is for the number of rows a cell should merge, 
+	  whereas the colspan attribute is for the number of columns a cell should merge.
+	  Syntex Colspan:-<td colspan="2">cell data</td>
+	  Syntex Rowspan:-<td rowspan="2">cell data</td>
+
+Quest-11:-What is the difference between a block-level element and an inline element?
+Ans-11:-  Block elements start from a new line and cover complete space as per the content. Moreover, it covers the whole horizontal space.
+	  The <div> tag is a block element. It is used as a section in the HTML page to group all large sections of HTML elements.
+
+	  
+	 Inline elements cover only the area which is bounded by the tags in the HTML element and never start from the new line.
+	 The <span> tag is an inline element. It is used as a container to highlight or markup particular text or part of a document.
+
+Quest-12:-How to create a Hyperlink in HTML?
+Ans-12:-  With HTML, easily add hyperlinks to any HTML page. Link team page, about page, or even a test by creating it a hyperlink. 
+	  You can also create a hyperlink for an external website. To make a hyperlink in an HTML page, use the <a> and </a> tags, 
+	  which are the tags used to define the links.
+	Example:-<a href="url">link text</a>
+	
+Quest-13:-What is the use of an iframe tag?
+Ans-13:-  HTML Iframe is used to display a nested webpage. The HTML <iframe> tag defines an inline frame, hence it is also 
+	  called as an Inline frame.An HTML iframe embeds another document within the current HTML document in the rectangular region.
+	  The webpage content and iframe contents can interact with each other using JavaScript.
+	Syntex:-<iframe src="URL"></iframe>
+
+Quest-14:-What is the use of a span tag? Explain with example?
+Ans-14:-  HTML <span> tag is used as a generic container of inline elements. It is used for styling purpose to the grouped inline 
+	  elements (using class and id attribute or inline style). The <span> tag does not have any default meaning or rendering.
+	  The <span> tag can be useful for the following task: To change the language of a part of the text.
+	  To change the color, font, background of a part of text using CSS
+	  To apply the scripts to the particular part of the text.
+	Syntex:<span>Write your content here......</span> 
+
+Quest-15:-How to insert a picture into a background image of a web page?
+Ans-15:-  Background images are used to make a website more interactive and attractive. It can be applied in many stylings.
+	  Example:-<body background="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+	<h1>GeeksforGeeks</h1>
+	<h2>Background Image</h2>
+	</body>
+
+Quest-16:-How are active links different from normal links?
+Ans-16:-  Normal Link is that, when an visitor visit the browser and search anything, an than he/she goes to link which he 
+	  want to visit is in blue color, is know as Normal Link.
+	  Active Link is that, when a visitor has visit that web site and he want to open again that time link color may red,
+	  that show the visitor has visit that web site a go.
+
+Quest-17:-What are the different tags to separate sections of text?
+Ans-17:-Three tags are used to separate the texts. <br> tag - Usually <br> tag is used to separate the line of text. 
+	It breaks the current line and conveys the flow to the next line
+	<p> tag - The <p> tag contains the text in the form of a new paragraph.
+	<blockquote> tag - It is used to define a large quoted section. If you have a large quotation, 
+	then put the entire text within <blockquote>.............</blockquote> tag.
+
+Quest-18:-What is SVG?
+Ans-18:-SVG stands for Scalable Vector Graphics. It is used to define vector-based graphics for the Web and also defines 
+	the graphics in XML format. Every element and every attribute in SVG files can be animated. SVG is a W3C recommendation
+	SVG integrates with other W3C standards such as the DOM and XSL
+
+Quest-19:-What is difference between HTML and XHTML?
+Ans-19:-Hypertext Mark-up Language (HTML) is a programming language that shows information and depicts a site page's design. 
+	Hypertext works with perusing the web by referring to an HTML page's hyperlinks. The hyperlink empowers one to go 
+	to any put on the web by clicking it. There is no set request to do as such.
+	
+	XHTML stands for extensible hypertext markup language which is a connection between HTML (hypertext mark-up language) 
+	and XML (extensible markup language) also at most of the places XHTML is considered superior than HTML.
+
+Quest-20:-What are logical and physical tags in HTML?
+Ans-20:-Physical and Logical tags are used in HTML for better visibility and understanding of the text by the user on the web page. 
+	However, both tags differ from each other as suggested by their names.
+	Logical Tags are used in HTML to display the text according to the logical styles.
+	example:-<abbr>	Defines an abbreviation, <acronym> Defines an acronym, <address> Defines an address element, <cite> Defines citation,
+	<code>	Defines computer code text, <blockquote> Defines a long quotation, <del> Defines text.
+	Physical Tags are used in HTML to provide actual physical formatting to the text.
+	Example:-<b> Defines bold text, <big> Defines big text, <i> Defines italic text, <small> Defines small text, <sup> Defines superscripted text,
+		<sub> Defines subscripted text, <tt> Defines teletype text.
