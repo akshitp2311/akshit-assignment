@@ -1,0 +1,50 @@
+!DOCTYPE html
+html lang=en
+
+head
+    meta charset=UTF-8
+    meta http-equiv=X-UA-Compatible content=IE=edge
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleDocumenttitle
+head
+
+body
+    header
+        header style=height 50px; background-color aqua align=center
+            h2Header tagh2
+        header
+        nav style=height 100px; background-color antiquewhite align=center
+            div class=Heading
+                h2 Navigation Bar h2
+            div
+            table
+                tr
+                    ul class=nav-links
+                        td
+                            lia class=active href=index.htmlHomeali
+                        td
+                        td
+                            lia
+                                    href=pagesGTopsAssignmentHTMLHTML_PRACTESQuestion 01IMAGEGALLARY.htmlGallarya
+                            li
+                        td
+                        td
+                            lia href=pagesabout.htmlAboutali
+                        td
+                        td
+                            lia href=pagescontact.htmlContactali
+                        td
+                        td
+                            lia href=pageshelp.htmlHelpali
+                        td
+                        td
+                            lia href=LoginSignup.htmlLoginSignUpali
+                        td
+                    ul
+                tr
+            table
+        nav
+    header
+body
+
+html

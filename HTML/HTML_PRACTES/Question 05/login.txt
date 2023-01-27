@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body">
+    <br /><br /><br />
+    <center>
+        <fieldset style="width: 40%; background-color: lightskyblue;">
+            <legend align="left"><h2>LOGIN HERE</h2></legend>
+            <form action="" method="get" name="form1">
+                <table style="width: 20px; background-color: rgb(230, 103, 162);" cellpadding="10px" border="0" cellspacing="5px">
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Enter username" style="height: 30px; width: 200px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" placeholder="Enter Password" style="height: 30px; width: 200px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button style="height: 30px; width: 208px; border-color: black; background-color: blueviolet;">LOGIN</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </center>
+</body>
+</html>

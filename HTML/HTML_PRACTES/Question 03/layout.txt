@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <header style="height: 70px; background-color: chocolate; padding: 15px;" align="center">
+            <h2>ABOUT HTML</h2>
+        </header>
+            <table style="background-color: lightblue;">
+                <tr>
+                    <ul class="nav-links">
+                        <td style="padding-left: 110px;">
+                            <li><a class="active" href="index.html">Home</a></li>
+                        </td>
+                        <td style="padding-left: 110px;">
+                            <li><a
+                                    href="pages/G:\Tops\Assignment\HTML\HTML_PRACTES\Question 01\IMAGEGALLARY.html">Gallary</a>
+                            </li>
+                        </td>
+                        <td style="padding-left: 110px;">
+                            <li><a href="pages/about.html">About</a></li>
+                        </td>
+                        <td style="padding-left: 110px;">
+                            <li><a href="pages/contact.html">Contact</a></li>
+                        </td>
+                        <td style="padding-left: 110px;">
+                            <li><a href="pages/help.html">Help</a></li>
+                        </td>
+                        <td style="padding-left: 110px; padding-right: 200px;">
+                            <li><a href="Login/Signup.html">Login/SignUp</a></li>
+                        </td>
+                    </ul>
+                </tr>
+            </table>
+        <section id="main" style="height: 500px; background-color: lightsalmon;">
+    <p>
+        HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes, and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as and directly introduce content into the page. Other tags such as surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags but use them to interpret the content of the page. 
+    </p>
+    <br />
+    <p>
+        HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes, and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as and directly introduce content into the page. Other tags such as surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags but use them to interpret the content of the page.
+    </p>
+    <br /><br />
+</section>
+    <Footer align="center" style="bottom: center; padding: 20px; background-color: black; color: white;">
+        <H4>2022 html. All Right Reserved</H4>
+    </Footer>
+</body>
+</html>
