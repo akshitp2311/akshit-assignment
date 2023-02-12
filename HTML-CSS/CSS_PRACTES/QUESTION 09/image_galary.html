@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            height: 200px;
+            width: 250px;
+            border-radius: 10px;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 10px;
+            gap: 10px;
+            width: 100%;
+            background-color: lightslategray;   
+        }
+        .sub1:hover{
+            transform: rotate(90deg);
+            transition: 1s all ease;
+        }
+        .sub2:hover{
+            transform: rotateX(180deg);
+            transition: 1s all ease;
+        }
+        .sub3:hover{
+            transform: scale(0.5, 0.5);
+            transition: 1s all ease;
+        }
+        .sub4:hover{
+            transform: scale(1.5,1.5);
+            transition: 1s all ease;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub1">
+            <img src="image/img1.jpg" alt="">
+        </div>
+        <div class="sub2">
+            <img src="image/img2.jpg" alt="">
+        </div>
+        <div class="sub3">
+            <img src="image/img3.jpg" alt="">
+        </div>
+        <div class="sub4">
+            <img src="image/img4.jpg" alt="">
+        </div>
+        <div class="sub5">
+            <img src="image/img5.jpg" alt="">
+        </div>
+        <div class="sub6">
+            <img src="image/img7.jpg" alt="">
+        </div>
+        <div class="sub7">
+            <img src="image/img8.jpg" alt="">
+        </div>
+        <div class="sub8">
+            <img src="image/img9.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

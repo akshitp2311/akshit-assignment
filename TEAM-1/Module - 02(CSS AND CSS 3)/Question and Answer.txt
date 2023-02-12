@@ -1,0 +1,168 @@
+Quest - 01:-What are the benefits of using CSS?
+Ans - 	There are a number of benefits of CSS, including:
+	01)Faster Page Speed
+	More code means slower page speed. And CSS enables you to use less code.
+	2) Better User Experience
+	CSS not only makes web pages easy on the eye, it also allows for user-friendly formatting.
+	3) Quicker Development Time
+	With CSS, you can apply specific formatting rules and styles to multiple pages with one string of code. 
+	One cascading style sheet can be replicated across several website pages.
+	4) Easy Formatting Changes
+	If you need to change the format of a specific set of pages, it’s easy to do so with CSS. There’s no need to fix every individual page.
+	5) Compatibility Across Devices
+	Responsive web design matters. In today’s day and age, web pages must be fully visible and easily navigable on all devices. 
+	Whether mobile or tablet, desktop, or even smart TV, CSS combines with HTML to make responsive design possible.
+------------------------------------------------------------------------------------------------------------------------
+Quest - 02:-What are the disadvantages of CSS?
+Ans -	There are a few downsides while using CSS.
+	1)Confusion due to many CSS levels
+	Beginners are more vulnerable to this issue. They might get confused while opting to learn CSS as there are many levels of CSS such as CSS2, CSS3, etc.
+	2)Cross-Browser Issues
+	Different browsers work differently. So, you have to check that changes implemented in the website via CSS codes are reflected properly among all browsers.
+	3)Security Issues
+	Security is important in today’s world driven by technology and data. One of the major disadvantages of CSS is that it has limited security
+	4)Extra Work for Developers
+	Design services are required to consider and test all CSS codes across different browsers for compatibility. 
+	Due to developers testing compatibility for different browsers, their workload increases.
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 03:-What is the difference between CSS2 and CSS3?
+Ans -	CSS was originally released in 1996 and consists of properties for adding font properties such as typeface and emphasis color of text, backgrounds, and other elements. 
+	CSS2 was released in 1998 with added styles for other media types so that it can be used for page layout designing. 
+	CSS3 was released in 1999 and presentation-style properties were added in it that allows you to build a presentation from documents.
+	Unlike CSS2, which was comprised of a single document, CSS3 has its specifications divided into many individual modules, which makes CSS3 a whole lot easier to handle.
+	While CSS and CSS2 had ‘simple selectors’, CSS3 calls the components as ‘a sequence of simple selectors’.
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 04:-Name a few CSS style components
+Ans -	The major components of a CSS style are as follows:
+	Selecter: HTML element name, id name, class name.
+	Property: It's like an attribute such as background color,font-size,position,text-align,color,border etc.
+	Values: Which defines property or values allocate for properties
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 05:-What do you understand by CSS opacity?
+Ans -	The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
+	opacity applies to the element as a whole, including its contents, even though the value is not inherited by child elements. 
+	Thus, the element and its children all have the same opacity relative to the element's background, even if they have different opacities relative to one another.
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 06:-How can the background color of an element be changed?
+Ans -	The background-color property sets the background color of an element.
+	The background of an element is the total size of the element, including padding and border (but not the margin).
+	Use a background color and a text color that makes the text easy to read.
+	<style>
+	body{
+		background-color:red;
+	}
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 07:-How can image repetition of the backup be controlled?
+Ans -	This task can be achieved by using the background-repeat property that will help us to control the repetition of the image.
+	The background-repeat property in CSS is used to repeat the background image both horizontally and vertically. 
+	It also decides whether the background image will be repeated or not.
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 08:-What is the use of the background-position property?
+Ans -	The background-position property sets the starting position of a background image.
+	A background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 09:-Which property controls the image scroll in the background?
+Ans -	The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.
+	background-attachment: fixed;
+        background-attachment:scroll;
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 10:-Why should background and color be used as separate properties?
+Ans -	There are two reasons behind this: It enhances the legibility of style sheets. The background property is a complex
+ 	property in CSS, and if it is combined with color, the complexity will further increase.
+	Color is an inherited property while the background is not. So this can make confusion further.
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 11:-How to center block elements using CSS1?
+Ans -	 1: Define the external width – We need to define the external width. Block-level elements have the default width of 100% of the webpage,
+	so for centering the block element, we need space around it.
+	 2: Set the left-margin and the right-margin of the element to auto – Since we produced a remaining space by providing external width 
+	so now we need to align that space properly that’s why we should use margin property.
+	element {
+    		width:200px;
+    		margin: auto;
+		}
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 12:-How to maintain the CSS specifications?
+Ans -	The Specification defines how CSS properties should be implemented by browser vendors along with detailed algorithms, code samples and tabular information.
+	The Specification also include:
+	1)The syntax and data types of the language
+	2)Detailed explanation on CSS Selectors
+	3)How you can assign values to properties
+	4)The Cascade (the "C" in CSS)
+	5)How inheritance works.
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 13:-What are the ways to integrate CSS as a web page?
+Ans -	There are three way to integrate CSS as a web pages
+	1)Inline - by using the style attribute inside HTML elements.
+	2)Internal - by using a <style> element in the <head> section.
+	3)External - by using a <link> element to link to an external CSS file.
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 14:-What is embedded style sheets?
+Ans -	Embedded Stylesheet: It allows you to define styles for a particular HTML document as a whole in one place. 
+	This is done by embedding the <style></style> tags containing the CSS properties in the head of your document. 
+	Embedded style sheets are particularly useful for HTML documents that have unique style requirements from the rest of the documents in your project. 
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 15:-What are the external style sheets?
+Ans -	An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. 
+	Multiple webpages can use the same link to access the stylesheet.
+	The link to an external style sheet is placed within the head section of the page.
+	<head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+	</head>
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 16:-What are the advantages and disadvantages of using external style sheets?
+Ans -	1) ADVANTAGE OF EXTERNAL ARE:-
+	*)With the help of External Style Sheets, the styles of numerous documents can be organized from one single file.
+	*)In External Style Sheets, Classes can be made for use on numerous HTML element types in many forms of the site.
+	*)In complex contexts, Methods like selector and grouping can be implemented to apply styles.
+	
+	2)DISADVANTAGE OF EXTERNAL ARE:-
+	*)An extra download is essential to import style information for each file.
+	*)The execution of the file may be deferred till the external style sheet is loaded.
+	*)While implementing style sheets, we need to test Web pages with multiple browsers in order to check compatibility issues.
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 17:-What is the meaning of the CSS selector?
+Ans -	A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML 
+	elements should be selected to have the CSS property values inside the rule applied to them. The element or elements which 
+	are selected by the selector are referred to as the subject of the selector.
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 18:-What are the media types allowed by CSS?
+Ans -	There some media type are  
+	1)all:-	    Used for all media type devices
+	2)print:-   Used for printers
+	3)screen:-  Used for computer screens, tablets, smart-phones etc.
+	4)speech:-  Used for screenreaders that "reads" the page out loud
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 19:-What is the rule set?
+Ans -	Each (valid) declaration block is preceded by one or more comma-separated selectors, which are conditions selecting some 
+	elements of the page. A selector group and an associated declarations block, together, are called a ruleset, or often a rule.
+
+-------------------------------------------------------------------------------------------------------------------------
+Quest - 20:-Create Layouts
+Ans -	A website is often divided into headers, menus, content and a footer.
+	1)Header
+	A header is usually located at the top of the website (or right below a top navigation menu).
+	2)Navigation Bar
+	A navigation bar contains a list of links to help visitors navigating through your website.
+	3)Content
+	The layout in this section, often depends on the target users. The most common layout is one (or combining them) of the following:
+	1-column (often used for mobile browsers)
+	2-column (often used for tablets and laptops)
+	3-column layout (only used for desktops)
+	4)Footer
+	The footer is placed at the bottom of your page. It often contains information like copyright and contact information.
+
+-------------------------------------------------------------------------------------------------------------------------
