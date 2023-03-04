@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 500px;
+            width: 100%;
+        }
+        .main{
+            background-image: radial-gradient(white, rgb(233, 120, 139), white);
+        }
+        form{
+            padding: 90px 0px;
+        }
+        h2{
+            text-align: center;
+        }
+        h2::after{
+            content: "";
+            height: 3px;
+            width: 120px;
+            background-color: rgb(80, 80, 206);
+            display: inline-block;
+            margin: 7px 3px;
+        }
+        h2::before{
+            content: "";
+            height: 3px;
+            width: 100px;
+            background-color: rgb(80, 80, 206);
+            display: inline-block;
+            margin: 7px 3px;
+        }
+        table{
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        td{
+            padding: 10px;
+        }
+        #box{
+            height: 30px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        button{
+            border-radius: 10px;
+            border: 2px solid black;
+            height: 35px;
+            width: 120px;
+            background-color: rgb(80, 80, 206);
+            color: white;
+            margin-right: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <center>
+            <form action="" method="get" name="form1"></form>
+            <table>
+                <tr>
+                    <td>
+                        <h2>Login</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Enter Name" name="" id="box">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="Enter Password" name="" id="box">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <button>
+                            Login <i class="fa-solid fa-forword"></i>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+</body>
+</html>

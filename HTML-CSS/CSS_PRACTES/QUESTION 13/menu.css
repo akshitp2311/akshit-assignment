@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.list{
+    background-color: lightcoral;
+    margin: 20px 10px;
+}
+.list .nav{
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+.list .nav li{
+    padding: 20px;
+    background-color: darkcyan;
+}
+.list .nav li a{
+    color: white;
+}
+.ser-menu{
+    position: relative;
+}
+.ser-menu .inner-menu{
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 109px;
+    height: auto;
+}
+.ser-menu .inner-menu li{
+    background-color: orangered;
+    padding: 10px 20px;
+}
+.ser-menu:hover .inner-menu{
+    display: block;
+}
+.ser-menu span{
+    transition: .5s all ease;
+}
+.ser-menu:hover span{
+    transform: rotateX(180deg);
+}

@@ -1,0 +1,23 @@
+Quest-01:-Define the terms: Website, Webpage, Web browser, Web server, HTML, CSS
+Ans:-	Web page
+	A web page is a simple document displayable by a browser. Such documents are written in the HTML language 
+	(which we look into in more detail in other articles). A web page can embed a variety of different types of 
+	resources such as:
+
+	style information — controlling a page's look-and-feel
+	scripts — which add interactivity to the page
+	media — images, sounds, and videos.
+	
+	Web site
+	A website is a collection of linked web pages (plus their associated resources) that share a unique domain name. 
+	Each web page of a given website provides explicit links—most of the time in the form of clickable portions of text—that 
+	allow the user to move from one page of the website to another.
+
+	Web server
+	A web server is a computer hosting one or more websites. "Hosting" means that all the web pages and their supporting 
+	files are available on that computer. The web server will send any web page from the website it is hosting to any user's 
+	browser, per user request
+
+	Search engine
+	Search engines are a common source of confusion on the web. A search engine is a special kind of website that helps 
+	users find web pages from other websites.
