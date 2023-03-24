@@ -1,0 +1,18 @@
+Quest :-Canvas and SVG tags
+
+Ans:-	SVG stands for Scalable Vector Graphics and is a language for describing 2D-graphics and graphical applications
+	in XML and the XML is then rendered by an SVG viewer.
+	The HTML <svg> element is a container for SVG graphics. SVG stands for Scalable Vector Graphics. SVG and useful for 
+	defining graphics such as boxes, circles, text, etc
+	
+	*SVG
+	SVG has better scalability. So it can be printed with high quality at any resolution
+	SVG gives better performance with smaller number of objects or larger surface.
+	SVG can be modified through script and CSS
+	SVG is vector based and composed of shapes.
+
+	*CANVAS
+	Canvas has poor scalability. Hence it is not suitable for printing on higher resolution
+	Canvas gives better performance with smaller surface or larger number of objects.
+	Canvas can be modified through script only
+	Canvas is raster based and composed of pixel.

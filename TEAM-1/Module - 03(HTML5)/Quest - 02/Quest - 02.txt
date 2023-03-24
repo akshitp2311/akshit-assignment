@@ -1,0 +1,29 @@
+Quest :-How to embed audio and video in a webpage?
+
+Ans :-	HTML5 features include native audio and video support without the need for Flash.
+	The HTML5 <audio> and <video> tags make it simple to add media to a website. 
+	You need to set src attribute to identify the media source and include a controls attribute so the 
+	user can play and pause the media.
+	
+	*Embedding Video
+	Here is the simplest form of embedding a video file in your webpage −
+
+	<video src = "foo.mp4"  width = "300" height = "200" controls>
+   		Your browser does not support the <video> element.   
+	</video>
+	
+	The current HTML5 draft specification does not specify which video formats browsers should support 
+	in the video tag. But most commonly used video formats are −
+
+	Ogg − Ogg files with Thedora video codec and Vorbis audio codec.
+	mpeg4 − MPEG4 files with H.264 video codec and AAC audio codec.
+
+	*Embedding Audio
+	HTML5 supports <audio> tag which is used to embed sound content in an HTML or XHTML document as follows.
+
+	<audio src = "foo.wav" controls autoplay>
+   		Your browser does not support the <audio> element.   
+	</audio>
+
+	The current HTML5 draft specification does not specify which audio formats browsers should support in the audio tag. 
+	But most commonly used audio formats are ogg, mp3 and wav.
