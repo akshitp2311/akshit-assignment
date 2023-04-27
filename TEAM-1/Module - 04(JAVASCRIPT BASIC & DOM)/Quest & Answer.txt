@@ -1,0 +1,115 @@
+Quest 01:- What is JavaScript?
+Ans 01:-   JavaScript is a scripting language that enables you to create dynamically updating content, 
+	   control multimedia, animate images, and pretty much everything else.
+	   JavaScript is the Programming Language for the Web.
+	   JavaScript can update and change both HTML and CSS.
+	   JavaScript can calculate, manipulate and validate data.
+=========================================================================================================
+Quest 02:- What is the use of isNaN function?
+Ans 02:-   In JavaScript NaN is short for "Not-a-Number". The isNaN() method returns true if a value is NaN.
+	   The isNaN() method converts the value to a number before testing it.
+==========================================================================================================
+Quest 03:-What is negative Infinity?
+Ans 03:-  NEGATIVE_INFINITY is a special numeric value that is returned when an arithmetic operation or mathematical
+	  function generates a negative value greater than the largest representable number in JavaScript.
+	  JavaScript displays the NEGATIVE_INFINITY value as -Infinity. This value behaves mathematically like infinity; 
+	  for example, anything multiplied by infinity is infinity, and anything divided by infinity is zero. 
+
+==========================================================================================================
+Quest 04:-Which company developed JavaScript?
+Ans 04:-  It was developed for Netscape 2, and became the ECMA-262 standard in 1997.
+	  After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the 
+	  Firefox browser. Mozilla's latest version was 1.8.5.
+
+==========================================================================================================
+Quest 05:-What are undeclared and undefined variables?
+Ans 05:-  When a variable is “undeclared,” it means that it has not been declared or defined in the current scope. 
+	  In other words, it hasn’t been given a value or a type. This can happen if you try to use a variable without 
+	  declaring it first, or if you misspell the variable name.
+	  
+	  Undefine
+	  Unlike “undeclared” variables, “undefined” variables have been declared in the current scope, 
+	  but have not been given a value. In other words, they have been initialized, but their value is not defined.
+==========================================================================================================
+Quest 06:-Write the code for adding new elements dynamically?
+Ans 06:-  The createElement() method in JavaScript can be used to create new items dynamically. 
+	  The setAttribute() method is used to set the attributes of the newly generated element.
+	  By clicking a button, a modal box appears and collects the required information dynamically.
+	  <script>
+      		document.getElementById("mybutton").
+      		addEventListener("click", function () {
+         	document.getElementById("innerdiv").innerHTML += "<h3>Hello User</h3><p>Start your learning journey today.</p>";
+      		});
+   	 </script>
+
+==========================================================================================================
+Quest 07:-What is the difference between ViewState and SessionState?
+Ans 07:-  Viewstate is a client-side mechanism for managing state. Viewstate is a specific type of data that only applies to the page where it is utilised.
+	  It saves the data on the same page in encrypted format. Information that you want to access from the same web page is stored in ViewState.
+	  Key points of Viewstate:
+	  Only page level maintenance.
+	  Only one page, not several pages, can display the view state.
+	  When a new page is loaded, ViewState values are lost or cleared.
+
+	  Session State is a method for managing server-side state. When a new client first interacts with a Web application, 
+	  a session ID is generated and associated with all subsequent requests from the same client for the duration of the session. 
+	  It is used mainly for storing user specific data [session specific data]. The session value can be used for the whole session 
+	  until the session expires or the user closes the session.
+	  Cleared by the programmer
+	  Cleared by the user
+	  Cleared when Timeout occurs
+==========================================================================================================
+Quest 08:-What is === operator?
+Ans 08:-  === (Triple equals) is a strict equality comparison operator in JavaScript, which returns false for the values which are not of a similar type. 
+	  This operator performs type casting for equality.
+
+==========================================================================================================
+Quest 09:-How can the style/class of an element be changed?
+Ans 09:-  We can change, add or remove any CSS property from an HTML element on the occurrence of any event 
+	  with the help of JavaScript
+	  document.getElementById("id").style.property = new_style
+
+==========================================================================================================
+Quest 10:-How to read and write a file using JavaScript
+Ans 10:-  Files can be read and written by using java script functions – fopen(),fread() and fwrite().
+	  file=fopen(getScriptPath(),0);
+	  OR 
+	  writeFile(path,inputData,callBackFunction)
+	  readFile(path, format, callBackFunc)
+
+==========================================================================================================
+Quest 11:-What are all the looping structures in JavaScript?
+Ans 11:-  JavaScript supports different kinds of loops:
+	  for - loops through a block of code a number of times
+	  for/in - loops through the properties of an object
+ 	  for/of - loops through the values of an iterable object
+   	  while - loops through a block of code while a specified condition is true
+	  do/while - also loops through a block of code while a specified condition is true
+
+==========================================================================================================
+Quest 12:-How can you convert the string of any base to an integer in JavaScript?
+Ans 12:-  To convert a string to an integer parseInt(), Number(), and Unary operator(+) function is used in javascript. 
+	  parseInt() function returns Nan( not a number) when the string doesn’t contain number. If a string with a number is sent, 
+	  then only that number will be returned as the output.
+
+==========================================================================================================
+Quest 13:-What is the function of the delete operator?
+Ans 13:-  The JavaScript pop(), shift(), or splice() methods are available to delete an element from an array. 
+	  But because of the key-value pair in an object, deleting is more complicated. Note that, the delete 
+	  operator only works on objects and not on variables or functions.
+
+==========================================================================================================
+Quest 14:-What are all the types of Pop up boxes available in JavaScript?
+Ans 14:-
+
+==========================================================================================================
+Quest 15:-What is the use of Void (0)?
+Ans 15:-
+
+==========================================================================================================
+Quest 16:-How can a page be forced to load another page in JavaScript?
+Ans 16:-
+
+==========================================================================================================
+Quest 17:-What are the disadvantages of using innerHTML in JavaScript?
+Ans 17:-
