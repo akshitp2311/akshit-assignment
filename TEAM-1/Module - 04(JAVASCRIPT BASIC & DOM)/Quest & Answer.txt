@@ -100,16 +100,23 @@ Ans 13:-  The JavaScript pop(), shift(), or splice() methods are available to de
 
 ==========================================================================================================
 Quest 14:-What are all the types of Pop up boxes available in JavaScript?
-Ans 14:-
+Ans 14:-JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box
 
 ==========================================================================================================
 Quest 15:-What is the use of Void (0)?
-Ans 15:-
+Ans 15:-void(0) means return undefined as a primitive value. We use this to prevent any negative effects on a webpage when we insert some expression. 
+	For example, in the case of URL hyperlinks. Hyperlinks open by reloading the page when the user clicks on the link.
 
 ==========================================================================================================
 Quest 16:-How can a page be forced to load another page in JavaScript?
-Ans 16:-
+Ans 16:- We can use window.location property inside the script tag to forcefully load another page in Javascript. It is a reference to a Location 
+	object that is it represents the current location of the document. We can change the URL of a window by accessing it.
 
 ==========================================================================================================
 Quest 17:-What are the disadvantages of using innerHTML in JavaScript?
-Ans 17:-
+Ans 17:-Disadvantages of innerHTML
+    	1.Event handlers attached to any DOM element are preserved.
+    	2.Replacement is done everywhere.
+    	3.It is not possible to append innerHTML.
+    	4.Breaks the document.
+    	5.Used for Cross-site Scripting.
