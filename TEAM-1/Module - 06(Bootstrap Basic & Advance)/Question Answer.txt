@@ -1,0 +1,107 @@
+Quest 01:-	What are the advantages of Bootstrap?
+Ans 01:-	Bootstrap is an open-source CSS framework designed to come up with mobile-friendly, responsive front-end web development. 
+		It consists of enormous versatile and reusable pieces of code written in HTML, JavaScript, and CSS.
+		Advantages of Bootstrap:-
+		1. Easy initiation
+		2. Responsiveness
+		3. Highly customizable
+		4. Extremely user-centric
+		5. Cross-browser compatibility
+=======================================================================================
+Quest 02:-	What is a Bootstrap Container, and how does it work?
+Ans 02:-	Containers are the most basic layout element in Bootstrap and are required when using our default grid system. 
+		Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, 
+		most layouts do not require a nested container.
+		.container, which sets a max-width at each responsive breakpoint
+		.container-fluid, which is width: 100% at all breakpoints
+		.container-{breakpoint}, which is width: 100% until the specified breakpoint
+=======================================================================================
+Quest 03:-	What are the default Bootstrap text settings?
+Ans 03:-	Bootstrap 4 Default Settings
+		Bootstrap 4 uses a default font-size of 16px, and its line-height is 1.5.
+		The default font-family is "Helvetica Neue", Helvetica, Arial, sans-serif.
+		In addition, all <p> elements have margin-top: 0 and margin-bottom: 1rem (16px by default).
+=======================================================================================
+Quest 04:-	What do you know about the Bootstrap Grid System?
+Ans 04:-	Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. 
+		It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
+		<div class="container">
+  		<div class="row">
+    		  <div class="col-sm">
+      			One of three columns
+   		  </div>
+    		  <div class="col-sm">
+      			One of three columns
+  		  </div>
+    		  <div class="col-sm">
+      			One of three columns
+    		  </div>
+  		</div>
+		</div>
+=======================================================================================
+Quest 05:-	What is the difference between Bootstrap 4 and Bootstrap 5
+Ans 05:-	BOOTSTRAP 4	
+		
+		Grid System  =	It has 5 tier (xs, sm, md, lg, xl).	
+		Color        =	It has limited colors.	
+		Jquery	     =  It has jquery and all related plugins.	
+		Internet Explorer  =	Bootstrap 4 supports both IE 10 and 11.	
+		Form elements  =  Radio buttons, checkboxes have different look in different OS and browsers. The form uses whatever default browsers provide.	
+		Utilities API  =  We cannot modify utilities in bootstrap 4	
+
+BOOTSTRAP 5
+		Grid System  =	It has 6 tier (xs, sm, md, lg, xl, xxl).
+		Color        =	Extra colors added with the looks, A card improved color palette. there are various shades available to choose.
+		Jquery       =	Jquery is removed and switched to vanilla JS with some working plugins
+		Internet Explorer  = 	Bootstrap 5 doesn’t support IE 10 and 11.
+		Form elements   =  The look of form elements will not change, on different OS or browser. The forms can be customized and form controls can be added, they would not depend on browser. 
+		Utilities API   =  Bootstrap 5 gave freedom to modify and also create our own utility
+=======================================================================================
+Quest 06:-	What is a Button Group, and what is the class for a basic Button Group?
+Ans 06:-	Button groups allow multiple buttons to be stacked together on a single line. This is useful when you want to place items like alignment buttons together. 
+		You can add on optional JavaScript radio and checkbox style behavior with Bootstrap Button Plugin. This class is used for a basic button group.
+		for example:
+		<div class="btn-group" role="group" aria-label="Basic example">
+  		  <button type="button" class="btn btn-secondary">Left</button>
+  		  <button type="button" class="btn btn-secondary">Middle</button>
+  		  <button type="button" class="btn btn-secondary">Right</button>
+		</div>
+=======================================================================================
+Quest 07:-	How can you use Bootstrap to make thumbnails?
+Ans 07:-	This chapter discusses about Bootstrap thumbnails. A lot of sites need a way to lay out images, videos, text, etc, in a grid, 
+		and Bootstrap has an easy way to do this with thumbnails.
+		<div class = "row">
+   		<div class = "col-sm-6 col-md-3">
+      		<a href = "#" class = "thumbnail">
+         	<img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      		</a>
+   		</div>
+		</div>
+=======================================================================================
+Quest 08:-	In Bootstrap 4, what is flexbox?
+Ans 08:-	Flexbox is used to quickly manage the layout, alignment and sizing of grid columns, navigation, components, 
+		and more with a full suite of responsive flexbox utilities.
+		
+		Flexbox Properties:
+
+		Enable flex behaviors
+		Direction
+		Justify content
+		Align items
+		Align self
+		Auto margins with justify-content
+		Auto margins with align-items
+		Wrap
+		Order
+		Align conten
+=======================================================================================
+Quest 09:-	How can one create an alert in Bootstrap?
+Ans 09:-	Bootstrap provides an easy way to create predefined alert messages:
+		Success! This alert box indicates a successful or positive action.
+		Info! This alert box indicates a neutral informative change or action.
+		Warning! This alert box indicates a warning that might need attention.
+		Danger! This alert box indicates a dangerous or potentially negative action.
+
+		Alerts are created with the .alert class, followed by one of the four contextual classes 
+		.alert-success, .alert-info, .alert-warning or .alert-danger:
+=========================================================================================
