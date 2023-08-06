@@ -1,0 +1,31 @@
+  .request-form-input{
+    background-color: white;
+    padding: 60px;
+  }
+  .request-form-input h3,h2{
+    color: #ff0101;
+  }
+  .request-form-input h5{
+    color: #0c420c;
+  }
+  .request-form .user-input{
+    height: 50px;
+    width: 100%;
+    border: 1px solid rgb(221, 9, 9);
+    border-radius: 10px;
+  }
+  .request-form .user-input:focus{
+    box-shadow: none;
+    border: 2px solid #196d58;
+  }
+  .request-form button{
+    height: 50px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #0c420c;
+    color: white;
+  }
+  .request-form button:hover{
+    background-color: #cc4747;
+  }
