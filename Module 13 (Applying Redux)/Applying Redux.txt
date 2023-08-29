@@ -1,0 +1,52 @@
+Quest 01:- What is Redux?
+Ans:- 	   Redux is a predictable state container for JavaScript applications, commonly used with 
+	   React but not limited to it. It helps manage the state of an application in a centralized 
+ 	   manner, making it easier to understand, debug, and maintain complex applications. 
+	   Redux follows a unidirectional data flow pattern, where the application state is stored 
+	   in a single global store and can only be modified through actions. It provides a set of 
+	   rules and patterns to manage state changes, making the application's behavior more 
+	   predictable.
+
+
+Quest 02:- What is Redux Thunk used for?**
+	   Redux Thunk is a middleware for Redux that allows you to write action creators that return
+	   functions instead of plain action objects. This is particularly useful for handling 
+	   asynchronous operations, such as making API calls, in Redux. Thunk middleware enables you 
+	   to delay the dispatch of an action until a certain condition is met or an asynchronous 
+	   operation completes. It is often used to handle side effects and manage asynchronous 
+	  logic while keeping the Redux codebase clean and maintainable.
+
+
+Quest 03:- What is Pure Component? When to use Pure Component over Component?
+Ans:-	  In React, both `Component` and `PureComponent` are base classes for creating class 
+	  components. The key difference is how they handle component updates.
+
+	  A `PureComponent` is a subclass of `Component` that implements a shallow comparison of the 
+	  component's current and next props and state. If there is no difference between them, a 
+	  `PureComponent` prevents unnecessary re-renders, improving performance. This can be 
+	  especially beneficial when dealing with components that have a large number of render 
+	  operations.
+
+	  Use `PureComponent` when:
+
+	1. Your component's render function depends solely on its props and state.
+	2. You want to optimize performance by avoiding unnecessary re-renders caused by shallow 
+	   equality checks.
+
+	However, note that the shallow equality check can have limitations when dealing with 
+	complex data structures or nested objects. In some cases, it might be more appropriate to use the regular `Component` and implement your own shouldComponentUpdate logic.
+
+
+
+Quest 04:- What is the second argument that can optionally be passed to `setState`, and what is its 
+	   purpose?
+Ans:- 	   The second argument that can be passed to the `setState` function in a class component is 
+	   a callback function. This callback function will be executed after the state has been 
+	   updated and the component has been re-rendered. Its purpose is to perform additional 
+	   actions or logic that should happen immediately after the state update.
+
+	  Here's an example of how the second argument can be used:
+
+	this.setState({ count: this.state.count + 1 }, () => {
+  	console.log('State updated:', this.state.count);
+	});
