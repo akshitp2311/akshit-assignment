@@ -1,0 +1,98 @@
+Quest:-01 What is the difference between Java & JavaScript?
+Ans:-01	  Java and JavaScript are two distinct programming languages with different purposes, 
+	  despite their similar-sounding names. Here are some key differences between Java and JavaScript.
+	
+	Type:
+
+	Java: Java is a statically-typed language, which means that variable types are declared explicitly, 
+		and type checking is performed at compile-time.
+	JavaScript: JavaScript is a dynamically-typed language, which means that variable types are determined 
+		at runtime, and type checking occurs during program execution.
+
+	Usage:
+
+	Java: Java is a general-purpose programming language used for a wide range of applications, 
+		including desktop applications, mobile apps, web applications (using Java-based web frameworks), 
+		server-side development (Java EE), and more.
+	JavaScript: JavaScript is primarily used for web development, enabling interactivity and dynamic 
+		behavior in web pages. It is often used alongside HTML and CSS to create interactive web applications 
+		and websites.
+
+	Syntax:
+
+	Java: Java has C-like syntax and uses a class-based object-oriented programming model. 
+		It has a more complex and verbose syntax compared to JavaScript.
+	JavaScript: JavaScript has a C-like syntax as well but uses a prototype-based object-oriented 
+		programming model. Its syntax is generally simpler and more forgiving.
+
+	Typing:
+
+	Java: Java enforces strong typing, meaning that variable types are strictly enforced and conversions 
+		must be explicit.
+	JavaScript: JavaScript is loosely typed, allowing for more flexibility in variable handling, but this 
+		can sometimes lead to unexpected behavior if not handled carefully.
+
+=================================================================================================================
+Quest:-02  What is JavaScrit?
+
+Ans:-02   JavaScript is a high-level, dynamically-typed, and interpreted programming language primarily used 
+	for web development. It is often referred to as the "language of the web" because it is an essential 
+	technology for creating interactive and dynamic features on websites and web applications.
+	1)Client-Side Web Development.
+	2)Dynamically Typed
+	3)Interactivity
+	4)Event-Driven
+	5)Cross-Browser Compatibility
+	6)Libraries and Frameworks
+	7)Asynchronous Programming
+	8)Security Considerations
+	9)ES6 and Beyond
+
+===================================================================================================================
+Quest:-03  What are the data types supported by JavaScript?
+Ans:03	  JavaScript supports several data types that are categorized into two main groups: primitive data 
+	types and reference data types. Here's an overview of the data types supported by JavaScript.
+
+Primitive Data Types:
+
+Number 
+String 
+Boolean
+Undefined 
+Null 
+Symbol (ES6) 
+BigInt (ES11)
+
+Reference Data Types:
+
+Object: 
+Array: 
+Function: 
+Date: 
+RegExp (Regular Expression): 
+Map and Set (ES6): 
+
+================================================================================================================
+Quest:-04  What are the scopes of a variable in JavaScript?
+
+Ans:-04
+In JavaScript, the scope of a variable determines where in your code that variable can be accessed or modified.
+JavaScript has two main types of scope: local scope and global scope. Additionally, with the introduction of 
+let and const in ECMAScript 6 (ES6), JavaScript also supports block scope.
+
+Local Scope:
+Variables declared within a function have local scope, which means they are only accessible within that 
+function. These variables are often referred to as "local variables."
+
+Global Scope:
+Variables declared outside of any function have global scope. These variables are accessible from anywhere in 
+your code.
+
+Block Scope (ES6):
+With the introduction of let and const in ES6, you can also have block scope. Block scope is created within 
+any pair of curly braces {}. Variables declared with let and const in block scope are only accessible within that block.
+
+Function Scope (ES5 and earlier):
+In JavaScript versions prior to ES6, var declared variables have function scope. This means they are accessible
+anywhere within the function in which they are declared.
+
