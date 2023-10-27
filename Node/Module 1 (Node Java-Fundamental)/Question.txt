@@ -96,3 +96,96 @@ Function Scope (ES5 and earlier):
 In JavaScript versions prior to ES6, var declared variables have function scope. This means they are accessible
 anywhere within the function in which they are declared.
 
+=================================================================================================================
+Quest:-05 What is Callback?
+
+Ans:-04   In the context of Node.js, a callback is a function that is passed as an argument to another function and is intended 
+	  to be executed after the completion of that function. Callbacks are a fundamental concept in asynchronous programming 
+	  in Node.js, and they are commonly used to handle operations that may take some time to complete, such as reading a file, 
+	  making an HTTP request, or querying a database.
+==================================================================================================================
+Quest:-06 What is Closure? Give an example.
+
+Ans:-06   A closure is a fundamental concept in JavaScript, and it's not specific to Node.js but applies to JavaScript
+	 in general. Closures allow inner functions to access variables from their containing (outer) functions even 
+	 after the outer function has finished executing. They "enclose" the variables, preserving their state. 
+	 Closures are commonly used for data encapsulation and to create private variables in JavaScript.
+
+         Here's an example of a closure in Node.js (which is essentially JavaScript):
+-------------------------------------------------------------
+function outerFunction() {
+  const outerVariable = "I'm from the outer function";
+
+  function innerFunction() {
+    console.log(outerVariable); // Accessing the outer variable
+  }
+
+  return innerFunction; // Return the inner function, creating a closure
+}
+
+const closureFunction = outerFunction(); // Call the outer function and get the inner function
+
+closureFunction(); // Call the inner function
+-------------------------------------------------------------------------------------
+In this example, outerFunction contains an inner function called innerFunction. When outerFunction is called, 
+it defines an outerVariable and returns innerFunction. This creates a closure because innerFunction still has
+access to outerVariable even though outerFunction has finished executing. When you call closureFunction(), 
+it logs the value of outerVariable, demonstrating that it has access to the variable from its containing scope.
+
+Closures are powerful and are often used in Node.js for various purposes, including maintaining state in 
+asynchronous code, creating private variables, and implementing functional programming concepts like currying 
+and memoization. Understanding closures is crucial for effective JavaScript and Node.js development.
+
+================================================================================================================
+Quest:-07 What is the difference between the operators ‘==‘ & ‘===‘?
+
+Ans:-07   In general, it's a good practice to use the '===' operator (strict equality) in most cases, as it 
+	  provides more predictable and less error-prone behavior. It avoids unexpected type coercion and helps
+	  you write code that is more explicit about the type and value comparisons you intend to make. 
+	  The '==' operator (loose equality) can lead to subtle bugs, so it should be used with caution and a 
+	  clear understanding of its behavior when needed for specific cases where type coercion is desired.
+==================================================================================================================
+Quest:-08  What is the difference between null & undefined?
+
+Ans:-08    undefined:
+	undefined is a primitive value that represents the absence of a value or the lack of initialization of a variable.
+	It is often the default value of function parameters that have not been provided or the value of variables that 
+	have been declared but not assigned a value.
+	Variables that have been declared but not assigned a value are automatically initialized with undefined.
+	  
+	  null:
+	null is a primitive value that represents the intentional absence of any object value or the absence of a value with a clear intent.
+	It is often used to indicate that a variable should be empty or without a reference to any object.
+	When you set a variable to null, you are explicitly stating that it should not reference any object.
+
+===================================================================================================================
+Quest:-09  What would be the result of 2+5+”3″?
+Ans:-09    In Node.js (and JavaScript in general), when you use the + operator to concatenate or add values, 
+	   JavaScript performs type coercion to determine the result.
+
+	   In the expression 2 + 5 + "3", here's how it is evaluated step by step:
+
+	   2 + 5 is evaluated first, resulting in the numeric addition, which equals 7.
+
+	  Then, 7 + "3" is evaluated. Here, JavaScript performs type coercion and converts the number 7 
+	  into a string to make the concatenation work. So, it effectively becomes "7" + "3".
+
+	  The concatenation of two strings results in a new string, so the final result is "73".
+
+	  So, the result of the expression 2 + 5 + "3" in Node.js would be the string "73".
+
+===================================================================================================================
+Quest:-10  What is the difference between Call & Apply?
+
+Ans:-10	  In Node.js (and JavaScript in general), both call and apply are methods that can be used to invoke a function,
+	  but they differ in how they pass arguments to the function.
+
+		call:
+	 The call method is used to invoke a function with a specified this context and a list of arguments provided as individual arguments.
+	 You pass the this context as the first argument, and then you can pass any number of arguments as separate arguments to the function.
+	 This is useful when you know the exact number of arguments and want to pass them individually.
+
+		apply:
+	 The apply method is used to invoke a function with a specified this context and an array (or array-like object) of arguments.
+	 You pass the this context as the first argument, and then you provide an array (or array-like object) as the second argument, containing all the arguments to be passed to the function.
+	 This is useful when the number of arguments is variable or when you have an array of arguments to pass.
