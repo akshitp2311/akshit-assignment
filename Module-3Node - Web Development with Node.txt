@@ -1,0 +1,228 @@
+	Node JS Assignments
+
+MODULE - 1 Node - Web Development with Node
+
+
+QUESTION-1 What is Express.js?
+Answer
+Express.js is a web application framework for Node.js, designed for building web applications and APIs. 
+It provides a robust set of features for web and mobile applications, making it a popular choice among 
+developers for creating server-side applications in JavaScript.
+Key features of Express.js include:
+1)Routing: Express.js allows developers to define routes for handling different HTTP requests 
+(GET, POST, PUT, DELETE, etc.) to specific URL paths.
+
+2)Middleware: Middleware functions in Express.js are functions that have access to the 
+request and response objects in the application’s request-response cycle. They can perform 
+tasks such as parsing request bodies, logging, authentication, and error handling.
+
+3)Template Engines: Express.js supports various template engines like Pug, EJS, Handlebars, etc., 
+which enable developers to dynamically generate HTML markup.
+
+4)Static File Serving: Express.js provides built-in middleware for serving static files 
+like HTML, CSS, JavaScript, images, etc., from a directory on the server.
+
+5)Error Handling: It offers mechanisms for handling errors that occur during the request-response cycle, 
+including built-in error-handling middleware and the ability to define custom error-handling middleware.
+
+6)Integration with other frameworks and libraries: Express.js can be easily integrated with other 
+Node.js frameworks and libraries to extend its functionality or to add additional features.
+
+-----------------------------------------------------------------------------------------------------------
+
+QUESTION-2 Create localhost server using express.
+
+ANSWER
+
+Sure! Below is a basic example of how to create a localhost server using Express.js in Node.js:
+
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+});
+
+const port = 3000;
+
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
+
+To run this code:
+
+1. Make sure you have Node.js installed on your system.
+2. Create a new directory and save the above code in a file, for example, `server.js`.
+3. Open a terminal or command prompt, navigate to the directory where the `server.js` file is saved.
+4. Run the command `node server.js` to start the server.
+5. Open a web browser and go to `http://localhost:3000` to see the "Hello, world!" message.
+----------------------------------------------------------------------------------------------------------
+
+QUESTION - 3 Create basic “Hello world” app using node and express.
+
+ANSWER 
+
+Certainly! Here's a basic "Hello world" app using Node.js and Express:
+
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+});
+
+const port = 3000;
+
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
+
+1. Make sure you have Node.js installed on your system.
+2. Create a new directory and save the above code in a file, for example, `app.js`.
+3. Open a terminal or command prompt, navigate to the directory where the `app.js` file is saved.
+4. Run the command `node app.js` to start the server.
+5. Open a web browser and go to `http://localhost:3000` to see the "Hello, world!" message.
+
+This app creates a simple Express server that listens on port 3000 and responds with "Hello, world!" when you visit the root URL.
+
+--------------------------------------------------------------------------------------------------------
+
+QUESTION - 4 Create weather app.
+i. Use Hbs.
+ii. Get country, state, city using api
+iii. Get weather data by city
+
+ANSWER 
+
+Sure, here's a basic Weather App using Node.js, Express.js, and Handlebars (hbs) as the template engine. We'll use the OpenWeatherMap API to fetch weather data based on the city name provided by the user:
+
+const express = require('express');
+const hbs = require('hbs');
+const axios = require('axios');
+
+// Create an instance of the Express application
+const app = express();
+
+// Set the view engine to hbs
+app.set('view engine', 'hbs');
+
+// Set the directory for views
+app.set('views', __dirname + '/views');
+
+// Middleware to serve static files from the public directory
+app.use(express.static('public'));
+
+// Define a route handler for the root URL
+app.get('/', (req, res) => {
+  res.render('index');
+});
+
+// Define a route handler for getting weather data
+app.get('/weather', async (req, res) => {
+  try {
+    const { city } = req.query;
+
+    // Make a GET request to the OpenWeatherMap API
+    const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=YOUR_API_KEY&units=metric`);
+
+    // Extract relevant data from the API response
+    const { name, main, weather } = response.data;
+    const temperature = main.temp;
+    const description = weather[0].description;
+
+    // Render the weather view with the data
+    res.render('weather', { city: name, temperature, description });
+  } catch (error) {
+    // Render an error view if there's an error fetching weather data
+    res.render('error', { message: 'Error fetching weather data. Please try again.' });
+  }
+});
+
+// Define the port number to listen on
+const port = process.env.PORT || 3000;
+
+// Start the server and listen on the specified port
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
+
+Make sure to replace `'YOUR_API_KEY'` with your actual OpenWeatherMap API key.
+
+To run this app:
+
+1. Create a new directory and save the above code in a file, for example, `app.js`.
+2. Install the required dependencies by running `npm install express hbs axios` in your terminal.
+3. Replace `'YOUR_API_KEY'` with your actual OpenWeatherMap API key.
+4. Run the command `node app.js` to start the server.
+5. Open a web browser and go to `http://localhost:3000` to access the Weather App.
+
+This app allows users to input a city name and fetches weather data for that city from the OpenWeatherMap 
+API, displaying the temperature and description on a rendered webpage.
+----------------------------------------------------------------------------------------------------------
+
+QUESTION - 5 Create world clock app.
+
+ANSWER 
+
+Creating a world clock app involves displaying the current time in different time zones around the world. 
+We can achieve this by using the `moment-timezone` library to handle time zone conversions. 
+Below is a basic implementation of a world clock app using Node.js and Express.js:
+
+// Import required modules
+const express = require('express');
+const moment = require('moment-timezone');
+
+// Create an instance of the Express application
+const app = express();
+
+// Set the view engine to ejs
+app.set('view engine', 'ejs');
+
+// Set the directory for views
+app.set('views', __dirname + '/views');
+
+// Define a route handler for the root URL
+app.get('/', (req, res) => {
+  // Get the current time in different time zones
+  const timeZones = [
+    'America/New_York',
+    'Europe/London',
+    'Asia/Tokyo',
+    'Australia/Sydney'
+  ];
+
+  const currentTime = {};
+
+  timeZones.forEach(zone => {
+    currentTime[zone] = moment().tz(zone).format('YYYY-MM-DD HH:mm:ss');
+  });
+
+  // Render the world clock view with the current time in different time zones
+  res.render('worldClock', { currentTime });
+});
+
+// Define the port number to listen on
+const port = process.env.PORT || 3000;
+
+// Start the server and listen on the specified port
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
+```
+
+To run this app:
+
+1. Create a new directory and save the above code in a file, for example, `app.js`.
+2. Install the required dependencies by running `npm install express moment-timezone ejs` in your terminal.
+3. Run the command `node app.js` to start the server.
+4. Open a web browser and go to `http://localhost:3000` to access the World Clock App.
+
+This app fetches the current time in different time zones 
+(`America/New_York`, `Europe/London`, `Asia/Tokyo`, `Australia/Sydney`) and displays them on a webpage 
+rendered using the EJS template engine. You can add more time zones as needed or customize the application 
+further based on your requirements.
+---------------------------------------------------------------------------------------------------------------------
+
+
+
