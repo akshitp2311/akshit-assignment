@@ -1,0 +1,163 @@
+Module – 3: Node - Web Development with Node
+
+Question 1:- Create localhost server using express.
+Answer:-
+To create a local server using Express, follow these steps:
+
+step:1
+install node js
+
+step:2
+install express using npm install express
+
+step:3
+Create your server file
+
+// Import the Express module
+const express = require('express');
+// Create an Express application
+const app = express();
+
+// Define a port for the server to listen on
+const PORT = 3000;
+
+// Define a route handler for the default home page
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+// Start the server and listen on the specified port
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+step:4
+Run server File {node server.js}
+
+step:5
+Access Your Server:
+Open your web browser and navigate to http://localhost:3000. You should see the message "Hello, World!"
+
+=====================================================================================
+
+Question-2:-  Create basic “Hello world” app using node and express.
+Answer:-
+To create a basic "Hello World" application using Node.js and Express, follow these steps:
+
+step:1
+install node js
+
+step:2
+install express using npm install express
+
+step:3
+Create your server file
+
+// Import the Express module
+const express = require('express');
+// Create an Express application
+const app = express();
+
+// Define a port for the server to listen on
+const PORT = 3000;
+
+// Define a route handler for the default home page
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+// Start the server and listen on the specified port
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+step:4
+Run server File {node server.js}
+
+step:5
+Access Your Server:
+Open your web browser and navigate to http://localhost:3000. You should see the message "Hello, World!"
+==============================================================================================
+
+Question-3: Create a weather app?
+Answer:-
+i. Use Hbs (Handlebars for templating):
+
+step:-1) Install handlebars using npm
+step:-2) npm install hbs
+
+step:-3)
+const express = require('express');
+const hbs = require('hbs');
+const app = express();
+const port = 3000;
+
+Step:-4) Set up handlebars as the view engine
+app.set('view engine', 'hbs');
+
+Step:-5) Create a views folder in your project directory and add an index.hbs file with your HTML template
+
+app.get('/', (req, res) => {
+  res.render('index', {
+    title: 'Weather App',
+    message: 'Welcome to the Weather App!'
+  });
+});
+
+app.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`);
+});
+
+Step:-6)
+//Get API from OpenWeather Site from Browers, set in our project
+i. Get country, state, city using an API
+
+ii. Get weather data by city: You will need to integrate with a weather API (e.g., OpenWeatherMap API) to fetch weather data by city.
+
+==========================================================================================================
+
+Question:-5 Create a world clock app?
+Answer:-
+Step:-1)
+Install 
+Express(express for the backend server)
+Luxon(Luxon for date and time manipulation) and ejs(EJS for templating )
+
+step:-2)App.js file
+
+const express = require('express');
+const { DateTime } = require('luxon');
+const app = express();
+
+app.set('view engine', 'ejs');
+app.use(express.static('public'));
+
+const cities = [
+  { name: 'New York', timezone: 'America/New_York' },
+  { name: 'London', timezone: 'Europe/London' },
+  { name: 'Tokyo', timezone: 'Asia/Tokyo' },
+  { name: 'Sydney', timezone: 'Australia/Sydney' },
+  { name: 'India' , timezone: 'Asia/Kolkata'}
+];
+
+app.get('/', (req, res) => {
+  const cityTimes = cities.map(city => {
+    const now = DateTime.now().setZone(city.timezone);
+    return {
+      name: city.name,
+      time: now.toFormat('HH:mm:ss')
+    };
+  });
+  res.render('index', { cityTimes });
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+Step:-3)
+create html page and Css page for outer design
+
+Step:-4) Run the server 
+
